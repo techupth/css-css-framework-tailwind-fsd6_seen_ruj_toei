@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body>
+    <main
+      class="bg-slate-200 w-screen h-screen flex justify-center items-center"
+    >
+      <div
+        class="login-cotainer w-96 h-72 border bg-white rounded-xl flex flex-col gap-6 p-10"
+      >
+        <div class="title text-zinc-600 text-xl">Login to website</div>
+        <form class="flex flex-col gap-4">
+          <div class="email flex justify-between">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="border border-zinc-600 rounded-md p-2 hover:border-violet-500 focus:border-violet-300 focus:outline-none"
+            />
+          </div>
+          <div class="password flex justify-between">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="border border-zinc-600 rounded-md p-2 hover:border-violet-500 focus:border-violet-300 focus:outline-none"
+            />
+          </div>
+          <div class="button">
+            <button
+              class="w-36 p-2 rounded-full bg-violet-500 text-white active:bg-violet-600 hover:bg-violet-400 focus:ring-2 focus:ring-violet-300"
+            >
+              Sign in
+            </button>
+            <button
+              class="rounded-full w-36 p-2 hover:bg-violet-100 focus:ring-2 focus:ring-violet-300 text-violet-600"
+            >
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
