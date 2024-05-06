@@ -7,10 +7,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CSS Framework (Tailwind) Exercise 1</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Start coding here -->
+    <div class="h-screen w-screen bg-slate-200 flex justify-center items-center font-['Poppins']">
+      
+      <div class="w-[400px] h-[300px] rounded-xl bg-white flex flex-col justify-between items-start px-8 py-10">
+        
+        <h1 class="text-zinc-600 text-xl font-medium ">Login to website</h1>
+        
+        <div class="flex flex-col font-medium gap-5"> 
+
+          <div class="flex flex-row items-center">
+          <label for="username" class="w-[90px]"> Email </label>
+          <input type="email" class=" border border-zinc-600 p-2 hover:border-violet-500 focus:border-violet-300 focus:outline-none rounded-md">
+          </div> 
+          
+          <div class="flex flex-row items-center">
+          <label for="password" class="w-[90px]"> Password </label>
+          <input type="password" class=" border border-zinc-600 p-2 hover:border-violet-500 focus:border-violet-300 focus:outline-none rounded-md">
+          </div>
+
+        </div>
+
+        <div class="flex flex-row justify-between gap-12">
+            <button class="bg-violet-500 w-36 p-2 text-white active:bg-violet-600 hover:bg-violet-400 focus:ring-2 focus:ring-violet-300 rounded-3xl font-normal">Sign in</button>
+            <button class="bg-white w-36 p-2 text-violet-600 hover:bg-violet-100 focus:ring-2 focus:ring-violet-300 focus:text-violet-600 rounded-3xl font-normal">Sign Up</button>
+          </div>
+      </div>
+    </div>
 </body>
 
 </html>
